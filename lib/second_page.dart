@@ -10,7 +10,9 @@ class SecondPage extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           child: Text('Back'),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
       ),
     );

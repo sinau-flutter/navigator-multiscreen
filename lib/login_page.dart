@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:multiscreen_navigator/main_page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -7,7 +8,12 @@ class LoginPage extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           child: Text('Login'),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: (context) {
+              return MainPage();
+            }));
+          },
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:multiscreen_navigator/second_page.dart';
 
 class MainPage extends StatelessWidget {
   @override
@@ -10,7 +11,11 @@ class MainPage extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           child: Text('Second Page'),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return SecondPage();
+            }));
+          },
         ),
       ),
     );
